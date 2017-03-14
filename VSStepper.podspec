@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VSStepper"
-  s.version      = "1.0.0"
+  s.version      = "1.0"
   s.summary      = " VSStepper is custom controls similar to UIStepper but the label is between + and -." 
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = " Replacement for UIStepper that will render -<Label>+. You don't need to have another UILabel "
 
-  #s.homepage     = ""
+  s.homepage     = "https://github.com/vsathyan7/VSStepper"
   # s.screenshots  = ".com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios,"10.0"
+#  s.platform     = :ios, "10.2"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/vsathyan7/VSSTepper", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/vsathyan7/VSSTepper.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,8 +88,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "VSStepper", "VSStepper/**/*.{h,m}"
+  s.exclude_files = "VSStepper/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
